@@ -46,3 +46,9 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+task prod_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags("prod")
+    }
+}
