@@ -1,0 +1,48 @@
+plugins {
+    id 'java-library'
+    id 'io.qameta.allure' version '2.11.2'
+}
+
+group 'com.vesska'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+allure {
+    version.set("2.20.0")
+    adapter {
+        aspectjWeaver.set(true) //обработка аннотации @Step
+
+        frameworks {
+            junit5 {
+                adapterVersion.set("2.20.0")
+            }
+        }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
+}
+
+dependencies {
+    testImplementation (
+            'com.github.javafaker:javafaker:1.0.2',
+            'org.junit.jupiter:junit-jupiter-api:5.8.1',
+            'com.codeborne:selenide:6.10.1',
+            'io.qameta.allure:allure-selenide:2.20.1',
+            'org.slf4j:slf4j-simple:1.7.32'
+    )
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
