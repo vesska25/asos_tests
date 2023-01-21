@@ -4,8 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3fd05a2d-0a46-4503-b56e-4fb970966429" name="Changes" comment="add telegram bot notifications">
-      <change afterPath="$PROJECT_DIR$/notifications/telegram.json" afterDir="false" />
+    <list default="true" id="3fd05a2d-0a46-4503-b56e-4fb970966429" name="Changes" comment="add allure notification file">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Allure-mainPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Allure-suits.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/asos-jenkins-mainPage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/asos-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/IDEA-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/Telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/allure-Report-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/allure-ee-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/git-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/gradle-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/java-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/jenkins-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/junit5-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/selenide-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/icons/selenoid-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/jenkins-parameters.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/telegram-bot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/videos/jenkins-parameters.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,13 +81,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KSRaCVKHtA4OhfB89EbBtsqY5s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/hadou/IdeaProjects/ASOSTests/notifications"
@@ -78,6 +99,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hadou\IdeaProjects\ASOSTests\notifications" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hadou\IdeaProjects\ASOSTests\images" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.AsosTests">
@@ -223,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674151985822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add telegram json">
+      <created>1674152316887</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674152316887</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add allure notification file">
+      <created>1674152602645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674152602645</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,8 +276,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="add telegram bot notifications" />
-    <option name="LAST_COMMIT_MESSAGE" value="add telegram bot notifications" />
+    <MESSAGE value="add telegram json" />
+    <MESSAGE value="add allure notification file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add allure notification file" />
   </component>
 </project>
