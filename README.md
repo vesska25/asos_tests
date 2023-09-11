@@ -71,7 +71,7 @@ A parametrized Jenkins job:
 ## Main page
 Main page of Allure report contains the following blocks:
 
->- <code><strong>*ALLURE REPORT*</strong></code> - displays date and time of the test, overall number of launched tests, а также диаграмму с указанием процента и количества успешных, упавших и сломавшихся в процессе выполнения тестов
+>- <code><strong>*ALLURE REPORT*</strong></code> - displays date and time of the test, overall number of launched tests, as well as a diagram indicating the percentage and number of successful, failed and broken tests during execution
 >- <code><strong>*TREND*</strong></code> - displays trend of running tests for all runs
 >- <code><strong>*SUITES*</strong></code> - displays distribution of tests by suites
 >- <code><strong>*CATEGORIES*</strong></code> - displays distribution of unsuccessful tests by defect types
