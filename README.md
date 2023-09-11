@@ -1,4 +1,4 @@
-# Test automation project for [ASOS](https://www.asos.com/)
+# UI Test automation project for [ASOS](https://www.asos.com/)
 
 ![asos-logo.jpg](images/asos-logo.jpg)
 

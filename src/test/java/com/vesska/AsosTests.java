@@ -5,8 +5,11 @@ import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+
+import static com.codeborne.selenide.CollectionCondition.itemWithText;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
@@ -23,7 +26,7 @@ public class AsosTests extends TestBase {
         step("Open asos.com", () -> {
             open("https://www.asos.com/");
             //for accepting cookies
-            //$("#onetrust-accept-btn-handler").click();
+            $("#onetrust-accept-btn-handler").click();
         });
         step("Click on Preferences button" , () -> {
             $("[data-testid=country-selector-btn]").click();
@@ -47,7 +50,7 @@ public class AsosTests extends TestBase {
         step("Open asos.com", () -> {
             open("https://www.asos.com/");
             //for accepting cookies
-            //$("#onetrust-accept-btn-handler").click();
+            $("#onetrust-accept-btn-handler").click();
         });
         step("Type product name in search field and press enter", () ->{
             $("#chrome-search").setValue("Tommy Hilfiger backpack").pressEnter();
@@ -73,7 +76,7 @@ public class AsosTests extends TestBase {
         step("Open asos.com", () -> {
             open("https://www.asos.com/");
             //for accepting cookies
-            //$("#onetrust-accept-btn-handler").click();
+            $("#onetrust-accept-btn-handler").click();
         });
         step("Go to 'Returns & Refunds' page", () -> {
             $("[data-testid=myAccountIcon]").click();
@@ -96,10 +99,11 @@ public class AsosTests extends TestBase {
         step("Open the product page", () -> {
             open("/asos-design/asos-design-pleated-skirt-in-brown/prd/202923922");
             //for accepting cookies
-            //$("#onetrust-accept-btn-handler").click();
+            $("#onetrust-accept-btn-handler").click();
         });
         step("Click on Fit Assistant button", () -> {
-            $("#fit-upper").click();
+            sleep(5000);
+            $("[data-testid=fitAssistantLink]").click();
         });
         step("Switch Height to cm and set a value", () -> {
             $("[role=radiogroup]").click();
@@ -137,7 +141,7 @@ public class AsosTests extends TestBase {
             $("#uclw_save_info_button").click();
         });
         step("Check that Fit Assistant recommends size W30", () -> {
-            $("[class=uclw_size]").shouldHave(text("W30"));
+            $$("[class=uclw_subheadline]").shouldHave(itemWithText("Your Fit Assistant recommended size, W30, is out of stock"));
         });
     }
 
@@ -150,15 +154,15 @@ public class AsosTests extends TestBase {
         step("Open asos.com", () -> {
             open("https://www.asos.com/");
             //for accepting cookies
-            //$("#onetrust-accept-btn-handler").click();
+            $("#onetrust-accept-btn-handler").click();
         });
         step("Click on Women's products", () -> {
             $("[data-testid=women-floor]").click();
         });
         step("Check that Women's products has all sections", () -> {
             $("[data-testid=primarynav-large]").shouldHave(text("Sale " + "New in " +"Clothing "
-                    + "Dresses " + "Shoes " + "Sportswear " + "Accessories " + "Winter " + "Topshop " + "Face + Body "
-                    + "Brands " + "Outlet " + "Marketplace"));
+                    + "Dresses " + "Shoes " + "Accessories " + "Face + Body " + "Topshop " + "Sportswear "
+                    + "Late Summer " + "Denim " +  "Brands " + "Marketplace"));
         });
     }
 }
